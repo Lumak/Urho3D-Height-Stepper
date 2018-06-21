@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<scene id="1">
+	<attribute name="Name" value="" />
+	<attribute name="Time Scale" value="1" />
+	<attribute name="Smoothing Constant" value="50" />
+	<attribute name="Snap Threshold" value="5" />
+	<attribute name="Elapsed Time" value="0" />
+	<attribute name="Next Replicated Node ID" value="15" />
+	<attribute name="Next Replicated Component ID" value="37" />
+	<attribute name="Next Local Node ID" value="16777223" />
+	<attribute name="Next Local Component ID" value="16777300" />
+	<attribute name="Variables" />
+	<attribute name="Variable Names" value="" />
+	<component type="PhysicsWorld" id="1" />
+	<component type="Octree" id="2" />
+	<component type="DebugRenderer" id="3" />
+	<node id="2">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Zone" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Zone" id="4">
+			<attribute name="Bounding Box Min" value="-1000 -1000 -1000" />
+			<attribute name="Bounding Box Max" value="1000 1000 1000" />
+			<attribute name="Ambient Color" value="0.25 0.25 0.25 1" />
+		</component>
+	</node>
+	<node id="3">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="GlobalLight" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="0.836516 0.482963 0.224144 -0.12941" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Light" id="5">
+			<attribute name="Light Type" value="Directional" />
+			<attribute name="Color" value="0.8 0.8 0.8 1" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Shadow Intensity" value="0.5" />
+		</component>
+	</node>
+	<node id="4">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="PlayerSpawn" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-0.123718 0.116884 2.67413" />
+		<attribute name="Rotation" value="0.146304 0 0.98924 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+	</node>
+	<node id="5">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="level" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="13">
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/level1.mdl" />
+			<attribute name="Material" value="Material;HeightStepper/Scene/Materials/level1Mat.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="RigidBody" id="28" />
+		<component type="CollisionShape" id="29">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Offset Position" value="0 -0.05 0" />
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/level1.mdl" />
+		</component>
+	</node>
+	<node id="6">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="stick" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0.241378 0.275532 -4.793" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1.2 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="6">
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+			<attribute name="Material" value="Material;HeightStepper/Scene/Materials/ylwMat.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="RigidBody" id="14">
+			<attribute name="Physics Position" value="0.241378 0.275532 -4.793" />
+		</component>
+		<component type="CollisionShape" id="15">
+			<attribute name="Shape Type" value="ConvexHull" />
+			<attribute name="Offset Position" value="0 -0.05 0" />
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+		</component>
+	</node>
+	<node id="7">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="stairs" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-4.82557 0.778432 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1.1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="7">
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stairs.mdl" />
+			<attribute name="Material" value="Material;HeightStepper/Scene/Materials/level1Mat.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="RigidBody" id="16">
+			<attribute name="Physics Position" value="-4.82557 0.778432 0" />
+		</component>
+		<component type="CollisionShape" id="17">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Offset Position" value="0 -0.05 0" />
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stairs.mdl" />
+		</component>
+	</node>
+	<node id="8">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="stick1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-0.953925 0.279101 -4.6267" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1.2 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="8">
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+			<attribute name="Material" value="Material;HeightStepper/Scene/Materials/ylwMat.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="RigidBody" id="18">
+			<attribute name="Physics Position" value="-0.953925 0.279101 -4.6267" />
+		</component>
+		<component type="CollisionShape" id="19">
+			<attribute name="Shape Type" value="ConvexHull" />
+			<attribute name="Offset Position" value="0 -0.05 0" />
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+		</component>
+	</node>
+	<node id="9">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="stick2" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-2.57268 0.150042 -5.30126" />
+		<attribute name="Rotation" value="0.998685 0 0.0512691 0" />
+		<attribute name="Scale" value="1 1.2 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="9">
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+			<attribute name="Material" value="Material;HeightStepper/Scene/Materials/ylwMat.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="RigidBody" id="20">
+			<attribute name="Physics Rotation" value="0.998685 0 0.0512691 0" />
+			<attribute name="Physics Position" value="-2.57268 0.150042 -5.30126" />
+		</component>
+		<component type="CollisionShape" id="21">
+			<attribute name="Shape Type" value="ConvexHull" />
+			<attribute name="Offset Position" value="0 -0.05 0" />
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+		</component>
+	</node>
+	<node id="10">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="stick3" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-2.48363 0.264143 -5.06583" />
+		<attribute name="Rotation" value="0.996197 -0.015531 -0.0857252 -0.00133648" />
+		<attribute name="Scale" value="1 1.2 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="10">
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+			<attribute name="Material" value="Material;HeightStepper/Scene/Materials/ylwMat.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="RigidBody" id="22">
+			<attribute name="Physics Rotation" value="0.996197 -0.015531 -0.0857252 -0.00133648" />
+			<attribute name="Physics Position" value="-2.48363 0.264143 -5.06583" />
+		</component>
+		<component type="CollisionShape" id="23">
+			<attribute name="Shape Type" value="ConvexHull" />
+			<attribute name="Offset Position" value="0 -0.05 0" />
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+		</component>
+	</node>
+	<node id="11">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="stick4" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="1.41106 0.284305 -4.43402" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1.2 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="11">
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+			<attribute name="Material" value="Material;HeightStepper/Scene/Materials/ylwMat.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="RigidBody" id="24">
+			<attribute name="Physics Position" value="1.41106 0.284305 -4.43402" />
+		</component>
+		<component type="CollisionShape" id="25">
+			<attribute name="Shape Type" value="ConvexHull" />
+			<attribute name="Offset Position" value="0 -0.05 0" />
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+		</component>
+	</node>
+	<node id="12">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="ground" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="8.14368 0.0497581 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1.1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="12">
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/ground.mdl" />
+			<attribute name="Material" value="Material;HeightStepper/Scene/Materials/ylwMat.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="RigidBody" id="26">
+			<attribute name="Physics Position" value="8.14368 0.0497581 0" />
+		</component>
+		<component type="CollisionShape" id="27">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Offset Position" value="0 -0.05 0" />
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/ground.mdl" />
+		</component>
+	</node>
+	<node id="14">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="stick1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-0.953925 0.279101 -4.6267" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1.2 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="34">
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+			<attribute name="Material" value="Material;HeightStepper/Scene/Materials/ylwMat.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="RigidBody" id="35">
+			<attribute name="Physics Position" value="-0.953925 0.279101 -4.6267" />
+		</component>
+		<component type="CollisionShape" id="36">
+			<attribute name="Shape Type" value="ConvexHull" />
+			<attribute name="Offset Position" value="0 -0.05 0" />
+			<attribute name="Model" value="Model;HeightStepper/Scene/Models/stick.mdl" />
+		</component>
+	</node>
+</scene>
